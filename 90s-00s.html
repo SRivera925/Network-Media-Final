@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1970s-1980s</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+html {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  font-size:16px;
+} 
+body{background-color: black;}
+.header {
+  padding: 20px;
+  text-align: center;
+  background: red;
+  color: white;
+  font-size: 1.2rem;
+}
+.navbar {
+  display: flex;
+  background-color: white;
+}
+.navbar a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  flex: 25%;
+  font-size: 1.2vw;
+}
+.navbar a:hover {
+  background-color: grey;
+  color: white;
+}
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+  .navbar a{font-size:1.2rem;}
+  .row p{font-size:1.25rem;}
+}
+.years {
+    color: white;
+}
+h2 {text-align: center; color: white;}
+p {text-align: center; color: white;}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Nintendo.svg" style="width: 50%;" title="logo">
+</div>
+
+<div class="navbar">
+  <a href="final.html">Back to home</a>
+</div>
+
+<div class="Overview">
+<h2>Nintendo's Expansion and Innovation Era: 1990s & 2000s</h2>
+<p>In the 1990s, Nintendo solidified its legacy with revolutionary titles on the *Super Nintendo Entertainment System (SNES)*, like *Super Mario World* (1990), *The Legend of Zelda: A Link to the Past* (1991), and *Donkey Kong Country* (1994). The *Nintendo 64* introduced 3D gaming with landmark titles such as *Super Mario 64* (1996) and *The Legend of Zelda: Ocarina of Time* (1998). The 2000s saw continued innovation with the *GameCube* and the motion-controlled *Wii*, featuring games like *Super Smash Bros. Melee* (2001), *The Legend of Zelda: Twilight Princess* (2006), and *Wii Sports* (2006), which appealed to casual and family gamers. Portable gaming also thrived with the *Game Boy Advance* and *Nintendo DS*, delivering hits like Pokémon Ruby and Sapphire (2002) and New Super Mario Bros. (2006).</p>
+    
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="https://dosgames.com/screens/smwdx.png" style="width:100%">
+        <div class="text">Super Mario World (1990)</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="https://assetsio.gnwcdn.com/Kirby64.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp" style="width:100%">
+        <div class="text">Kirby on the N64 (2000)</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/SpecialMelee.jpg/220px-SpecialMelee.jpg" style="width:100%">
+        <div class="text">Super Smash Bros. Melee (2001)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="https://i.ytimg.com/vi/PSYUtYp7c_Q/maxresdefault.jpg" style="width:100%">
+        <div class="text"> Wii Sports (2006)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="https://www.wikihow.com/images/thumb/8/86/Choose-Between-Pok%C3%A9mon-Ruby%2C-Sapphire%2C-and-Emerald-Step-2-Version-2.jpg/v4-460px-Choose-Between-Pok%C3%A9mon-Ruby%2C-Sapphire%2C-and-Emerald-Step-2-Version-2.jpg.webp" style="width:100%">
+        <div class="text">Pokemon Ruby & Sapphire (2002)</div>
+      </div>
+</div>
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

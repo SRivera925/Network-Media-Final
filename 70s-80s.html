@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1970s-1980s</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+html {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  font-size:16px;
+} 
+body{background-color: black;}
+.header {
+  padding: 20px;
+  text-align: center;
+  background: red;
+  color: white;
+  font-size: 1.2rem;
+}
+.navbar {
+  display: flex;
+  background-color: white;
+}
+.navbar a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  flex: 25%;
+  font-size: 1.2vw;
+}
+.navbar a:hover {
+  background-color: grey;
+  color: white;
+}
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+  .navbar a{font-size:1.2rem;}
+  .row p{font-size:1.25rem;}
+}
+.years {
+    color: white;
+}
+h2 {text-align: center; color: white;}
+p {text-align: center; color: white;}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Nintendo.svg" style="width: 50%;" title="logo">
+</div>
+
+<div class="navbar">
+  <a href="final.html">Back to home</a>
+</div>
+
+<div class="Overview">
+<h2>The Foundational and Golden Age for Nintendo: 1970s & 1980s</h2>
+<p>In the 1970s, Nintendo released early arcade games like *EVR Race* (1975) and launched the *Color TV-Game* series (1977–1979), which included simple games such as *Pong* and *Block Breaker*. These marked their first steps into video gaming. In the 1980s, Nintendo transformed the industry with iconic titles like *Donkey Kong* (1981), which introduced Mario, followed by legendary NES classics like *Super Mario Bros.* (1985), *The Legend of Zelda* (1986), and *Metroid* (1986). These games established beloved franchises and set the standard for game design and storytelling.</p>
+    
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrdrGabDh4dX9DD8pbhSro2bJqQqG28tkpSzT9zmBByVr6jHpefN7DVFVdQ1dKO1vYq5Cd1uJ8jzo9aUv6MeDR1UYBcFp-GoGRwGldDMriylYMBa-cKl8EdDKPKJqdmb7nputWu1Ee4BS6/s1600/evr_mystery_01.JPG" style="width:100%">
+        <div class="text">EVR Race</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="https://lirp.cdn-website.com/1677e7ce/dms3rep/multi/opt/Color+TV-Game+6-640w.png" style="width:100%">
+        <div class="text">Color Tv-Game</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="https://www.nintendo.com/eu/media/images/06_screenshots/games_5/virtual_console_wii_u_3/wiiuvc_donkeykong/WiiUVC_DonkeyKong_03.bmp" style="width:100%">
+        <div class="text">Donkey Kong on the NES</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="https://i0.wp.com/www.the-pixels.com/wp-content/uploads/2016/03/nes-zelda-no-densetsu-the-hyrule-fantasy_oct14-2_56_05.png?resize=467%2C408&ssl=1" style="width:100%">
+        <div class="text">The Legend of Zelda on the Nes</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCV-0_Ro_UxSvhn-I4lJpgtiALp9rVoL6J1Q&s" style="width:100%">
+        <div class="text">Metroid on the NES</div>
+      </div>
+</div>
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
